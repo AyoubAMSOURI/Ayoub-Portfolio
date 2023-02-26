@@ -1,9 +1,11 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', 'sans-serif';
 }
 h1{
   color:#71B1D0 ;
+  font-size: 45px;
 }
 /*navbar*/
 nav ul {
@@ -31,7 +33,7 @@ nav ul {
   }
   
   nav li a:hover:not(.active) {
-    background-color: #111;
+    background-color: #898989;
   }
   
   .active {
@@ -48,6 +50,10 @@ nav ul {
   }
   #profileText{
     margin: 50px;
+  }
+  #About p{
+    color: #898989;
+    font-size: 20px;
   }
   /*End about*/
 
@@ -111,6 +117,14 @@ nav ul {
   #LeaveR{
     width: 50%;
     margin: auto;
+  }
+  .submitBtn{
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    color:#71B1D0 ;
+    border: solid 1px #71B1D0;
+    font-size: large;
   }
   /*END Recommendations*/
   .up{

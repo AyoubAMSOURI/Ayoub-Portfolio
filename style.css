@@ -2,13 +2,16 @@ body{
     margin: 0;
     padding: 0;
 }
+h1{
+  color:#71B1D0 ;
+}
 /*navbar*/
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #71B1D0;
   }
   
   nav li {
@@ -32,7 +35,7 @@ nav ul {
   }
   
   .active {
-    background-color: #04AA6D;
+    
     float:left;
   }
   /*end navbar*/
@@ -111,12 +114,18 @@ nav ul {
   }
   /*END Recommendations*/
   .up{
-    width: 40px;
-    background-color: #04AA6D;
+    width: 50px;
+    height: 50px;
+    background-color: #71B1D0 ;
+    color: white;
     font-size: 52px;
     position: fixed;
     bottom: 0px;
     right: 0px;
     cursor: pointer;
+    border-radius: 50%;
+    font-size: 40px;
+    padding: 10px;
+    text-align: center;
     
   }

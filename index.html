@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--nav section-->
+    <nav>
+        <ul>
+            <li><a href="#Recommendations">Recommendations</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#About">About Me</a></li>
+            <li class="active"><a  href="index.html">Ayoub AMSOURI <br>ayoub.am@gmail.com <br>+212632239824</a></li>
+          </ul>
+    </nav>
+    <!--End nav section-->
+
+    <!--About section-->
+    <section id="About">
+        <div>
+            <img id="profileImg" src="images/developer.webp" width="400px" height="400px"  alt="profileImg">
+        </div>
+        <div id="profileText">
+            <h2>
+                Hi I am Ayoub AMSOURI! 👋
+            </h2>
+            <p>
+                I am a fullstack developer with 3 years of experience in both front-end and back-end.
+                I have worked on websites using different technologies and I am eager to learn and improve my technical skills whenever I have the opportunity. 
+            </p>
+        </div>
+    </section>
+    <!--End About section-->
+
+    <!--Skills section-->
+    <section id="Skills">
+        <h1>
+            Skills
+        </h1>
+        <div id="container1">
+        <div class="card">
+            <img src="images/HTML5_logo_and_wordmark.svg.png" alt="Avatar" style="width:10%">
+            <div class="container">
+              <h4><b>HTML</b></h4>
+              <p>3 years experience</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/1452px-CSS3_logo_and_wordmark.svg.png" alt="Avatar" style="width:10%">
+            <div class="container">
+              <h4><b>CSS</b></h4>
+              <p>3 years experience</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/png-transparent-javascript-logo-html-javascript-logo-angle-text-rectangle-thumbnail.png" alt="Avatar" style="width:10%">
+            <div class="container">
+              <h4><b>Javascript</b></h4>
+              <p>3 years experience</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/React-icon.svg.png" alt="Avatar" style="width:10%">
+            <div class="container">
+              <h4><b>React</b></h4>
+              <p>3 mounths experience</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/2560px-Node.js_logo.svg.png" alt="Avatar" style="width:15%">
+            <div class="container">
+              <h4><b>Node</b></h4>
+              <p>3 mounths experience</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/Java-Logo.png" alt="Avatar" style="width:15%">
+            <div class="container">
+              <h4><b>Java</b></h4>
+              <p>1 year experience</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/PHP-logo.svg.png" alt="Avatar" style="width:15%">
+            <div class="container">
+              <h4><b>PHP</b></h4>
+              <p>3 years experience</p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!--End skills section-->
+
+    <!--Projects section-->
+    <section id="Projects">
+        <h1>
+            Projects
+        </h1>
+        <div class="ProjectDetail">
+            <h2>Restaurant website</h2>
+            <ul >
+                <li >Developed a website to a restaurant to give it an online presence and make a good first impression using HTML, CSS, JS and PHP.</li>
+            </ul>
+            <hr class="hrLine">
+        </div>
+        <div class="ProjectDetail">
+            <h2>E-commerce website</h2>
+            <ul>
+                <li>In order to get new maket acquisition FournInfo hired us to develop an E-commerce website that give a unique shopping expirience.</li>
+            </ul>
+            <hr class="hrLine">
+        </div>
+        <div class="ProjectDetail">
+            <h2>sunglasses application</h2>
+            <ul>
+                <li>While learning React framework I developed this app to practice the new notions.</li>
+            </ul>
+            <hr class="hrLine">
+        </div>
+        <div class="ProjectDetail">
+            <h2>Medical record application</h2>
+            <ul>
+                <li>I Developed this app to a university group of students to help them realise the idea of creating an application that helps doctors to pursue the patient's health changes.  </li>
+            </ul>
+            <hr class="hrLine">
+        </div>
+    </section>
+    <!--End projects section-->
+    <!--Recommendations section-->
+    <section id="Recommendations">
+      <h1>
+        Recommendations
+      </h1>
+      <div id="RecommendationsD">
+      <div class="recDiv">Ayoub did an exceptional job on recent projects. As I remember, he was a very productive person and is a multi-skilled person with vast knowledge. he is careful, proactive, self motivated and intelligent team player. </div>
+      <div class="recDiv">Ayoub is one of the most valuable people I have ever met. Both smart and professional. Experienced, deadline oriented and intelligent person. Highly recommended.</div>
+      <div class="recDiv">Ayoub was a fantastic person to work with, and is not only a multi-skilled and insightful colleague, but also an inspiring strategist. Very good person. Great employee with a very strong problem solving skills. he is an asset to any company.</div>
+      </div>
+      <div id="LeaveR">
+      <h2>Leave a recommendation</h2>
+      <input id="recName" type="text" placeholder="name(optional)"><br><br>
+      <textarea id="recCom"  placeholder="Message" cols="30" rows="10"></textarea><br><br>
+      <button onclick="addRec()">Submit</button>
+      </div>
+
+
+    </section>
+    <!--End Recommendations section-->
+
+    <div onclick="scrollUp()" class="up">
+      up
+    </div>
+
+    <script>
+      function addRec(){
+        var commentRl = document.getElementById('recCom');
+        const commentCr = document.createElement('div');
+        commentCr.innerText = commentRl.value;
+        commentCr.classList.add('recDiv');
+        document.getElementById('RecommendationsD').appendChild(commentCr);
+      }
+      function scrollUp(){
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      }
+    </script>
+</body>
+</html>

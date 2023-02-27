@@ -54,6 +54,7 @@ nav ul {
   /*About*/
   #About{
     display: flex;
+    flex-wrap: wrap;
   }
   #profileImg{
     margin: 50px;
@@ -92,7 +93,11 @@ nav ul {
   #Skills{
     margin: 50px;
   }
-  
+  @media screen and (max-width: 750px) {
+    .card{
+      width: 50%;
+    }
+  }
   /*END Skills*/
   
   /*Projects*/
@@ -115,6 +120,7 @@ nav ul {
   }
   #RecommendationsD{
     display: flex;
+    flex-wrap: wrap;
   }
   .recDiv{
     width: 33%;

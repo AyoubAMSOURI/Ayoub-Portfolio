@@ -27,11 +27,13 @@ nav ul {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    height: 50px;
-    display: flex;
+    height: 60px;
     align-items: center;
+    
   }
-  
+  .rightNav{
+    line-height: 60px ;
+  }
   nav li a:hover:not(.active) {
     background-color: #898989;
   }
@@ -39,6 +41,14 @@ nav ul {
   .active {
     
     float:left;
+  }
+  @media screen and (max-width: 750px) {
+    ul.topnav li.active, 
+    ul.topnav li {float: none;}
+    ul.topnav a{
+      width: 100%;
+      
+    }
   }
   /*end navbar*/
   /*About*/
